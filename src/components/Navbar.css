@@ -33,7 +33,7 @@ nav ul li a {
     color: white;
     padding: 0.75rem;
     margin: 0 0.5rem;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
 }
 
 nav ul li a:hover {

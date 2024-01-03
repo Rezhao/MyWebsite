@@ -6,6 +6,7 @@ import Contact from './components/pages/Contact';
 import Resume from './components/pages/Resume';
 import { Route, Routes } from "react-router-dom";
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/resume' element={<Resume />} />
         </Routes>
       </div>
+      <Footer />
 
     </>
   );
