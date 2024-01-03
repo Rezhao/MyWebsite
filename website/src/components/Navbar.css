@@ -1,0 +1,103 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+nav .logo {
+    font-size: 1.75rem;
+    margin: 1rem;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #F7C991, #F0A5BB, #C8AFF1, #73D0E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    /* display: block; */
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:hover {
+    color: #F7C991;
+}
+
+nav ul li .about:hover {
+    color: #F4B6A7;
+}
+
+nav ul li .projects:hover {
+    color: #F0A5BB;
+}
+
+nav ul li .contact:hover {
+    color: #C8AFF1;
+}
+
+nav ul li .resume:hover {
+    color: #73D0E0;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 1.1rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 720px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0rem;
+    }
+}
